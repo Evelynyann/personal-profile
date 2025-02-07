@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Learning Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .lesson-card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#resources">Resources</a>
+    </nav>
+
+    <div id="home" class="container">
+        <h1>Welcome to Grammar Learning</h1>
+        <p>Start your journey to mastering English grammar!</p>
+        <div>
+            <a href="#lessons" class="btn">Explore Lessons</a>
+            <a href="#quiz" class="btn">Take a Quiz</a>
+        </div>
+    </div>
+
+    <div id="lessons" class="container">
+        <h1>Grammar Lessons</h1>
+        <div class="lesson-card">
+            <h2>Lesson 1: Basic Sentence Structure</h2>
+            <p>Level: Beginner</p>
+            <a href="#lesson-detail" class="btn">Learn More</a>
+        </div>
+        <div class="lesson-card">
+            <h2>Lesson 2: Subject-Verb Agreement</h2>
+            <p>Level: Intermediate</p>
+            <a href="#lesson-detail" class="btn">Learn More</a>
+        </div>
+    </div>
+
+    <div id="lesson-detail" class="container">
+        <h1>Lesson 1: Basic Sentence Structure</h1>
+        <pre>Content of the lesson goes here...</pre>
+        <h3>Example Sentences:</h3>
+        <ul>
+            <li>The cat sits on the mat.</li>
+            <li>She reads a book every day.</li>
+        </ul>
+        <a href="#quiz" class="btn">Test Your Knowledge</a>
+    </div>
+
+    <div id="quiz" class="container">
+        <h1>Grammar Quiz</h1>
+        <form>
+            <div>
+                <p>What is the correct form of the verb in the sentence: "She (go) to school every day"?</p>
+                <label>
+                    <input type="radio" name="question1" value="go" required> Go
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="goes" required> Goes
+                </label>
+            </div>
+            <button type="submit" class="btn">Submit Quiz</button>
+        </form>
+    </div>
+
+    <div id="resources" class="container">
+        <h1>Grammar Learning Resources</h1>
+        <div class="lesson-card">
+            <h2>English Grammar Resources</h2>
+            <p>A comprehensive collection of grammar rules, examples, and quizzes to help you master grammar.</p>
+            <a href="https://www.grammarly.com" target="_blank" class="btn">Visit Website</a>
+        </div>
+        <div class="lesson-card">
+            <h2>English Grammar Workbook</h2>
+            <p>A workbook to practice grammar rules with exercises and answers.</p>
+            <a href="https://www.amazon.com" target="_blank" class="btn">Visit Website</a>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Grammar Learning Website
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Learning Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .lesson-card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        .quiz-result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#resources">Resources</a>
+    </nav>
+
+    <div id="home" class="container">
+        <h1>Welcome to Grammar Learning</h1>
+        <p>Start your journey to mastering English grammar!</p>
+        <div>
+            <a href="#lessons" class="btn">Explore Lessons</a>
+            <a href="#quiz" class="btn">Take a Quiz</a>
+        </div>
+    </div>
+
+    <div id="lessons" class="container">
+        <h1>Grammar Lessons</h1>
+        <div class="lesson-card">
+            <h2>Lesson 1: Basic Sentence Structure</h2>
+            <p>Level: Beginner</p>
+            <a href="#lesson-detail" class="btn">Learn More</a>
+        </div>
+        <div class="lesson-card">
+            <h2>Lesson 2: Subject-Verb Agreement</h2>
+            <p>Level: Intermediate</p>
+            <a href="#lesson-detail" class="btn">Learn More</a>
+        </div>
+    </div>
+
+    <div id="lesson-detail" class="container">
+        <h1>Lesson 1: Basic Sentence Structure</h1>
+        <pre>Content of the lesson goes here...</pre>
+        <h3>Example Sentences:</h3>
+        <ul>
+            <li>The cat sits on the mat.</li>
+            <li>She reads a book every day.</li>
+        </ul>
+        <a href="#quiz" class="btn">Test Your Knowledge</a>
+    </div>
+
+    <div id="quiz" class="container">
+        <h1>Grammar Quiz</h1>
+        <form id="quizForm">
+            <div>
+                <p>What is the correct form of the verb in the sentence: "She (go) to school every day"?</p>
+                <label>
+                    <input type="radio" name="question1" value="go" required>
+                    Go
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="goes" required>
+                    Goes
+                </label>
+            </div>
+            <div>
+                <p>What is the plural of "child"?</p>
+                <label>
+                    <input type="radio" name="question2" value="childs" required>
+                    Childs
+                </label>
+                <label>
+                    <input type="radio" name="question2" value="children" required>
+                    Children
+                </label>
+            </div>
+            <button type="submit" class="btn">Submit Quiz</button>
+        </form>
+
+        <div id="quizResult" class="quiz-result" style="display:none;">
+            <h2>Your Score: <span id="score"></span> out of <span id="total"></span></h2>
+            <div id="detailedResults"></div>
+            <a href="#quiz" class="btn">Try Again</a>
+            <a href="#lessons" class="btn">Back to Lessons</a>
+        </div>
+    </div>
+
+    <div id="resources" class="container">
+        <h1>Grammar Learning Resources</h1>
+        <div class="lesson-card">
+            <h2>English Grammar Resources</h2>
+            <p>A comprehensive collection of grammar rules, examples, and quizzes to help you master grammar.</p>
+            <a href="https://www.grammarly.com" target="_blank" class="btn">Visit Website</a>
+        </div>
+        <div class="lesson-card">
+            <h2>English Grammar Workbook</h2>
+            <p>A workbook to practice grammar rules with exercises and answers.</p>
+            <a href="https://www.amazon.com" target="_blank" class="btn">Visit Website</a>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Grammar Learning Website
+    </footer>
+
+    <script>
+        // Quiz logic
+        const quizForm = document.getElementById('quizForm');
+        const quizResult = document.getElementById('quizResult');
+        const scoreElement = document.getElementById('score');
+        const totalElement = document.getElementById('total');
+        const detailedResults = document.getElementById('detailedResults');
+        const correctAnswers = {
+            question1: 'goes',
+            question2: 'children'
+        };
+
+        quizForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let score = 0;
+            let total = Object.keys(correctAnswers).length;
+            let resultsHTML = '';
+
+            // Check answers and calculate score
+            for (let question in correctAnswers) {
+                const userAnswer = quizForm.querySelector(`input[name="${question}"]:checked`);
+
+                if (userAnswer) {
+                    const isCorrect = userAnswer.value === correctAnswers[question];
+                    score += isCorrect ? 1 : 0;
+                    resultsHTML += `
+                        <div style="background-color: ${isCorrect ? 'lightgreen' : 'lightcoral'}; padding: 10px; margin-bottom: 10px;">
+                            <p><strong>Question:</strong> ${userAnswer.closest('div').querySelector('p').textContent}</p>
+                            <p><strong>Your Answer:</strong> ${userAnswer.value}</p>
+                            <p><strong>Correct Answer:</strong> ${correctAnswers[question]}</p>
+                            <p>Result: ${isCorrect ? 'Correct' : 'Incorrect'}</p>
+                        </div>
+                    `;
+                }
+            }
+
+            // Display results
+            scoreElement.textContent = score;
+            totalElement.textContent = total;
+            detailedResults.innerHTML = resultsHTML;
+            quizResult.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Learning Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .lesson-card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        .quiz-result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#resources">Resources</a>
+    </nav>
+
+    <div id="home" class="container">
+        <h1>Welcome to Grammar Learning</h1>
+        <p>Start your journey to mastering English grammar!</p>
+        <div>
+            <a href="#lessons" class="btn">Explore Lessons</a>
+            <a href="#quiz" class="btn">Take a Quiz</a>
+        </div>
+    </div>
+
+    <div id="lessons" class="container">
+        <h1>Grammar Lessons</h1>
+        <div class="lesson-card">
+            <h2>Lesson 1: Basic Sentence Structure</h2>
+            <p>Level: Beginner</p>
+            <a href="#lesson-detail" class="btn">Learn More</a>
+        </div>
+        <div class="lesson-card">
+            <h2>Lesson 2: Subject-Verb Agreement</h2>
+            <p>Level: Intermediate</p>
+            <a href="#lesson-detail" class="btn">Learn More</a>
+        </div>
+    </div>
+
+    <div id="lesson-detail" class="container">
+        <h1>Lesson 1: Basic Sentence Structure</h1>
+        <pre>Content of the lesson goes here...</pre>
+        <h3>Example Sentences:</h3>
+        <ul>
+            <li>The cat sits on the mat.</li>
+            <li>She reads a book every day.</li>
+        </ul>
+        <a href="#quiz" class="btn">Test Your Knowledge</a>
+    </div>
+
+    <div id="quiz" class="container">
+        <h1>Grammar Quiz</h1>
+        <form id="quizForm">
+            <div>
+                <p>What is the correct form of the verb in the sentence: "She (go) to school every day"?</p>
+                <label>
+                    <input type="radio" name="question1" value="go" required>
+                    Go
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="goes" required>
+                    Goes
+                </label>
+            </div>
+            <div>
+                <p>What is the plural of "child"?</p>
+                <label>
+                    <input type="radio" name="question2" value="childs" required>
+                    Childs
+                </label>
+                <label>
+                    <input type="radio" name="question2" value="children" required>
+                    Children
+                </label>
+            </div>
+            <button type="submit" class="btn">Submit Quiz</button>
+        </form>
+
+        <div id="quizResult" class="quiz-result" style="display:none;">
+            <h2>Your Score: <span id="score"></span> out of <span id="total"></span></h2>
+            <div id="detailedResults"></div>
+            <a href="#quiz" class="btn">Try Again</a>
+            <a href="#lessons" class="btn">Back to Lessons</a>
+        </div>
+    </div>
+
+    <div id="resources" class="container">
+        <h1>Grammar Learning Resources</h1>
+        <div class="lesson-card">
+            <h2>English Grammar Resources</h2>
+            <p>A comprehensive collection of grammar rules, examples, and quizzes to help you master grammar.</p>
+            <a href="https://www.grammarly.com" target="_blank" class="btn">Visit Website</a>
+        </div>
+        <div class="lesson-card">
+            <h2>English Grammar Workbook</h2>
+            <p>A workbook to practice grammar rules with exercises and answers.</p>
+            <a href="https://www.amazon.com" target="_blank" class="btn">Visit Website</a>
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Grammar Learning Website
+    </footer>
+
+    <script>
+        // Quiz logic
+        const quizForm = document.getElementById('quizForm');
+        const quizResult = document.getElementById('quizResult');
+        const scoreElement = document.getElementById('score');
+        const totalElement = document.getElementById('total');
+        const detailedResults = document.getElementById('detailedResults');
+        const correctAnswers = {
+            question1: 'goes',
+            question2: 'children'
+        };
+
+        quizForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let score = 0;
+            let total = Object.keys(correctAnswers).length;
+            let resultsHTML = '';
+
+            // Check answers and calculate score
+            for (let question in correctAnswers) {
+                const userAnswer = quizForm.querySelector(`input[name="${question}"]:checked`);
+
+                if (userAnswer) {
+                    const isCorrect = userAnswer.value === correctAnswers[question];
+                    score += isCorrect ? 1 : 0;
+                    resultsHTML += `
+                        <div style="background-color: ${isCorrect ? 'lightgreen' : 'lightcoral'}; padding: 10px; margin-bottom: 10px;">
+                            <p><strong>Question:</strong> ${userAnswer.closest('div').querySelector('p').textContent}</p>
+                            <p><strong>Your Answer:</strong> ${userAnswer.value}</p>
+                            <p><strong>Correct Answer:</strong> ${correctAnswers[question]}</p>
+                            <p>Result: ${isCorrect ? 'Correct' : 'Incorrect'}</p>
+                        </div>
+                    `;
+                }
+            }
+
+            // Display results
+            scoreElement.textContent = score;
+            totalElement.textContent = total;
+            detailedResults.innerHTML = resultsHTML;
+            quizResult.style.display = 'block';
+            quizForm.style.display = 'none'; // Hide the quiz form after submission
+        });
+    </script>
+</body>
+</html>
